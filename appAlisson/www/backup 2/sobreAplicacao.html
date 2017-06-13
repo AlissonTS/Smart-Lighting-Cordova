@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="meuAPP">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height">
+    <!-- <meta http-equiv="refresh" content="5"> !-->
+    <title>Aplicação PROGC Alisson</title>
+
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/ionic.min.css">
+    <link rel="stylesheet" href="css/aplicativo.css">
+  </head>
+  <body ng-controller="MainCtrl" onload="teste()">
+    <ion-side-menus>
+      <ion-side-menu-content>
+        <ion-header-bar class="bar-positive">
+            <div class="buttons">
+                  <button class="button icon button-clear ion-navicon-round" ng-click="toggleLeft()"></button>
+            </div>
+            <h1 class="title">SMART LIGHTING <i class="icon ion-ios-lightbulb-outline"></i></h1>
+        </ion-header-bar>
+        <div class="bar bar-subheader">
+          <h2 class="title"><i class="icon ion-monitor"></i> Sobre a Aplicação</h2>
+        </div>
+        <!-- <ion-content scroll="true"> -->
+        <ion-content class="padding has-footer" style="margin-top:10%">
+          <div class="list card">
+            <div class="item item-divider">Nome</div>
+            <div class="item item-body">
+              <div>
+                <b>SMART LIGHTING</b>
+              </div>
+            </div>
+          </div>
+          <div class="list card">
+            <div class="item item-divider">Descrição</div>
+            <div class="item item-body">
+              <div>
+                Aplicação Mobile Híbrida voltada para <b>Automação Residencial.</b>
+              </div>
+            </div>
+          </div>
+          <div class="list card">
+            <div class="item item-divider">Funcionalidades</div>
+            <div class="item item-body">
+              <div>
+                Acionamento de iluminação residencial de acordo com a posição do usuário verificada por GPS.
+              </div>
+            </div>
+          </div>
+        <div class="list card">
+            <div class="item item-divider">Importante</div>
+            <div class="item item-body">
+              <div>
+                Setar coordenadas do <b>Acionador</b> e <b>Distância de Sensibilidade </b>, para que seja possível a verificação de distância entre usuário e ponto de iluminação.
+              </div>
+            </div>
+          </div>
+        </ion-content>
+      </ion-side-menu-content>
+        <ion-side-menu side="left">
+          <ion-list>
+            <ion-item style="padding: 13px;"><i class="icon ion-android-home"></i><a href="index.html" id="link"> Página Inicial</a></ion-item>
+          </ion-list>
+          <ion-list>
+            <ion-item style="padding: 13px;"><i class="icon ion-android-pin"></i><a href="coordArduino.html" id="link"> Coordenadas do Acionador</a></ion-item>
+          </ion-list>
+          <ion-list>
+            <ion-item style="padding: 13px;"><i class="icon ion-compose"></i><a href="distancia.html" id="link"> Distância</a></ion-item>
+          </ion-list>
+          <ion-list>
+            <ion-item style="padding: 13px;"><i class="icon ion-map"></i><a href="coordCelMapPontosMenu.html" id="link"> Mapa</a></ion-item>
+          </ion-list>
+          <ion-list>
+            <ion-item style="padding: 13px;"><i class="icon ion-information"></i><a href="sobreInstrucao.html" id="link"> Instruções de Uso</a></ion-item>
+          </ion-list>
+          <ion-list>
+            <ion-item style="padding: 13px;"><i class="icon ion-monitor"></i><a href="sobreAplicacao.html" id="linkAtivo"> Sobre a Aplicação</a></ion-item>
+          </ion-list>
+          <ion-list>
+            <ion-item style="padding: 13px;"><i class="icon ion-android-exit"></i><a onclick="exitApp()" id="link"> Encerrar Aplicação</a></ion-item>
+          </ion-list>
+        </ion-side-menu>
+    </ion-side-menus>
+
+    <div class="bar bar-footer bar-positive">
+      <div class="title">Alisson Trindade Souza</div>
+    </div>
+
+    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+
+    <script src="js/materialize.min.js"></script>
+    <script src="js/ionic.min.js"></script>
+    <script src="js/ionic.bundle.min.js"></script>
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&libraries=geometry"></script>
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCGxj4kq2GHCBRFfkljD4Dkf_hs43o-Ark">
+    </script>
+    <script type="text/javascript" src="js/aplicativo/aplicativo.js"></script>
+    <script type="text/javascript" src="js/aplicativo/verifica.js"></script>
+
+  </body>
+</html>

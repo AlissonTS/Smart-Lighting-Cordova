@@ -1,0 +1,37 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "csi.alissonts.appalisson"
+        },
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "csi.alissonts.appalisson"
+        },
+        "cordova-plugin-geolocation": {
+            "PACKAGE_NAME": "csi.alissonts.appalisson"
+        },
+        "cordova-sqlite-storage": {
+            "PACKAGE_NAME": "csi.alissonts.appalisson"
+        },
+        "cordova-plugin-x-toast": {
+            "PACKAGE_NAME": "csi.alissonts.appalisson"
+        },
+        "cordova-plugin-vibration": {
+            "PACKAGE_NAME": "csi.alissonts.appalisson"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "csi.alissonts.appalisson"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "csi.alissonts.appalisson"
+        }
+    }
+}
